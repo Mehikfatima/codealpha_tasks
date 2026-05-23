@@ -1,0 +1,2 @@
+Put MP3 files here using names like pasoori.mp3, afreen_afreen.mp3, satisfya.mp3, etc.
+Or open index.html and use the file picker / drag-and-drop to load songs from your computer.
