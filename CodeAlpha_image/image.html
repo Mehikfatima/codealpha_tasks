@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Travel Pakistan Gallery</title>
+
+  <link rel="stylesheet" href="image.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">TravelPakistan</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="darkModeBtn" class="dark-mode-btn">🌙</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Explore Pakistan’s Beautiful Destinations</h1>
+      <p>Hunza, Kalam, Lahore, Swat, Skardu, and Naran Kaghan in one gallery.</p>
+
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search Hunza, Kalam, Lahore, Swat, Skardu..."
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Buttons -->
+  <section class="category-section">
+    <button class="category-btn active" data-category="all">All</button>
+    <button class="category-btn" data-category="hunza">Hunza</button>
+    <button class="category-btn" data-category="kalam">Kalam</button>
+    <button class="category-btn" data-category="lahore">Lahore</button>
+    <button class="category-btn" data-category="swat">Swat</button>
+    <button class="category-btn" data-category="skardu">Skardu</button>
+    <button class="category-btn" data-category="naran">Naran Kaghan</button>
+  </section>
+
+  <!-- Gallery -->
+  <main class="gallery-container" id="gallery">
+    <h2 id="galleryTitle">All Destinations</h2>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Images will be added by JavaScript -->
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+
+    <button class="lightbox-btn prev-btn" id="prevBtn">&#10094;</button>
+
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="Large preview" />
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxCaption"></p>
+
+      <a id="downloadBtn" class="download-btn" href="#" download>
+        Download Image
+      </a>
+    </div>
+
+    <button class="lightbox-btn next-btn" id="nextBtn">&#10095;</button>
+  </div>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <h2>About This Gallery</h2>
+    <p>
+      This image gallery showcases some of the most beautiful travel destinations
+      in Pakistan. It is built with HTML, CSS, and JavaScript as a responsive
+      frontend project.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <p>© 2026 Travel Pakistan Gallery | Created by mehik fatima hussain</p>
+  </footer>
+  <button id="backToTopBtn" class="back-to-top">↑</button>
+
+  <script src="image.js"></script>
+</body>
+</html>
